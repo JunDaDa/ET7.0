@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{18B9CDC8-4F7F-460E-C7AA-900F18D8C944}</ProjectGuid>
+    <ProjectGuid>{24A69FBD-3987-A725-EB0E-444640A78F6F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Unity.Codes</AssemblyName>
+    <AssemblyName>Unity.RenderPipelines.Core.Runtime</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -56,298 +56,154 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\Actor\ActorMessageDispatcherComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Actor\ActorMessageSenderComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Message\InnerOpcode.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Config\ConfigAttribute.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Move\M2C_StopHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Scene\SceneFactory.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\ConfigPartial\StartProcessConfig.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Scene\AfterCreateCurrentScene_AddComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\AI\AIDispatcherComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\ActorLocation\IActorLocationMessage.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\Transfer\M2M_UnitTransferRequestHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Login\EnterMapHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\UIComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\AI\XunLuoPathComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\AOI\ChangePosition_NotifyAOI.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\AI\AI_Attack.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Client\Demo\Ping\PingComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Scene\AfterCreateClientScene_AddComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Actor\AMActorRpcHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Gate\C2G_PingHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\UI\UILobby\UILobbyEvent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\ActorLocation\ActorLocationSenderComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Gate\C2G_EnterMapHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Config\ConfigComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\CoroutineLock\CoroutineLock.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Actor\MailBoxComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Actor\MailboxType.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Gate\SessionPlayerComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Router\RouterAddressComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\Transfer\C2M_TransferMapHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Unit\ChangeRotation_SyncGameObjectRotation.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Router\HttpClientHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Unit\Unit.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Scene\SceneChangeStart_AddComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\AOI\AOIManagerComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\Session.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\NetKcpComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\UI\UIHelp\UIHelpComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\AOI\AOISeeCheckHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Message\OuterMessage.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Console\ModeContex.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Config\StartZoneConfig.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\MessageSerializeHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\Move\C2M_StopHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Login\LoginHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\ObjectWait\ObjectWait.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\CoroutineLock\CoroutineLockTimer.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\Actor\MailBoxComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Scene\CurrentScenesComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\SessionAcceptTimeoutComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\LayerNames.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Module\UI\UIEventComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Gate\C2G_LoginGateHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\CoroutineLock\CoroutineLockType.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Recast\PathfindingComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Message\MessageDispatcherComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\Http\HttpComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\UI\UIHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\UIEventAttribute.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Module\Resource\GameObjectHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Router\RouterHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\OpcodeHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Router\HttpGetRouterHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\OpcodeRangeDefine.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\ActorLocation\ObjectLockRequestHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\AOI\Cell.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Unit\GameObjectComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\CallbackType.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Actor\ActorMessageHandlerAttribute.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\Unit\UnitGateComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Actor\IActorMessage.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Robot\RobotCaseHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Message\MongoMessage.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\DB\DBComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\DB\DBManagerComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Helper\HttpHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\UI\UIHelp\UIHelpEvent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\AOI\CellSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Http\HttpHandlerAttribute.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Helper\SceneFactory.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\Move\C2M_PathfindingResultHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Global\GlobalComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Map\Unit\UnitGateComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Client\Demo\AI\XunLuoPathComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Opera\OperaComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Actor\AMActorHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\UI\UILogin\UILoginComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\C2M_TestRobotCaseHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Client\Demo\Session\SessionComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Robot\RobotManagerComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Timer\TimerComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Numeric\NumericComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\RobotCase\RobotCaseComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\ActorLocation\ObjectAddRequestHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Config\StartSceneConfig.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Client\Demo\Router\RouterCheckComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Config\StartProcessConfig.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\WaitType.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Helper\SessionStreamDispatcherServerOuter.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Move\MoveHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Robot\RobotCaseType.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Camera\CameraComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\UI\UILoading\UILoadingComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\RobotCase\RobotCaseAttribute.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Config\ConfigLoader.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Config\ConfigComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\ActorLocation\ActorLocationSender.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Scene\ClientSceneManagerComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Module\UI\UIComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\ActorLocation\ActorLocationSenderSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\UI\UILogin\UILoginEvent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Helper\SessionStreamDispatcherServerInner.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Client\Demo\Unit\PlayerComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Unit\GameObjectComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\ActorLocation\ObjectRemoveRequestHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Ping\PingComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Session\SessionStreamDispatcherClientOuter.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Gate\SessionInfoComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Unit\UnitComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\G2M_SessionDisconnectHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\IMessage.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Unit\AnimatorComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\ActorLocation\ObjectUnLockRequestHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Gate\Player.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Client\Demo\Router\RouterAddressComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Numeric\INumericWatcher.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Config\IMerge.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Config\UnitConfig.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Numeric\NumericWatcher_Hp_ShowUI.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Actor\IMActorHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Unit\M2C_RemoveUnitsHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\Actor\ActorHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Gate\PlayerComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\AMHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\Unit\UnitEnterSightRange_NotifyClient.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\DB\DBManagerComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Unit\UnitType.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\Router\RouterComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Scene\ClientSceneManagerComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Entry.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Message\SessionIdleCheckerComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Router\RouterNode.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Recast\NavmeshComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Gate\GateSessionKeyComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Http\HttpComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\Resource\ResourcesComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\CoroutineLock\CoroutineLockQueue.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\DB\IDBCollection.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Recast\NavmeshComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\RobotCase\RobotCase.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\ActorLocation\LocationProxyComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Scene\SceneChangeHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Scene\ClientSceneFlagComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Message\NetKcpComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\ISessionStreamDispatcher.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Gate\PlayerComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Gate\SessionPlayerComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\MessageDispatcherComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Unit\UnitHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\ActorLocation\LocationProxyComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\SessionIdleCheckerComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\MessageHandlerAttribute.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\CoroutineLock\CoroutineLockComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Console\ConsoleComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Timer\ATimer.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Log\NLogger.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Unit\M2C_CreateUnitsHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\UIType.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Map\Recast\RecastFileReader.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\UI.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Actor\ActorMessageSender.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\Unit\UnitFactory.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Robot\RobotManagerComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Scene\ClientSceneFlagComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\AUIEvent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Console\IConsoleHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Helper\InnerMessageDispatcherHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\AOI\AOIHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Scene\CurrentScenesComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\Console\ConsoleComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Camera\CameraComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Message\OuterOpcode.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Actor\ActorMessageDispatcherComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Numeric\NumericChangeEvent_NotifyWatcher.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\InitClient.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\Unit\UnitHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Watcher\WatcherComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Http\IHttpHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\EventType.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Robot\Console\CreateRobotConsoleHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Client\Demo\Helper\PositionHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Gate\R2G_GetLoginKeyHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Message\SessionAcceptTimeoutComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\UI\UILogin\LoginFinish_RemoveLoginUI.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Numeric\NumericType.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\NetThreadComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\ConfigPartial\StartSceneConfig.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\MessageInner\AMRpcHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Numeric\NumericWatcherComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Move\MoveEventType.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Gate\GateSessionKeyComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\Actor\ActorMessageSenderComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\ActorLocation\ObjectGetRequestHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Unit\AfterUnitCreate_CreateUnitView.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Unit\UnitEventType.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\IMHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\ErrorCode.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Robot\RobotConsoleHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\UI\UIHelp\SceneChangeFinishEvent_CreateUIHelp.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\RobotCase\RobotLog.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Helper\MessageHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\ActorLocation\AMActorLocationRpcHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Robot\Console\CreateRobotArgs.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\Resource\ResourcesLoaderComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Unit\M2C_CreateMyUnitHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\AI\AIComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Console\ConsoleHandlerAttribute.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\AOI\AOIManagerComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Unit\UnitComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\RobotCase\RobotCaseComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\UI\UILogin\UILoginComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\UI\UILobby\UILobbyComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\Console\ReloadConfigConsoleHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\AI\AIConfig.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Unit\ChangePosition_SyncGameObjectPos.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Move\M2C_PathfindingResultHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\Console\ReloadDllConsoleHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Message\NetThreadComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Unit\UnitSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\InitServer.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\UI\UILobby\LoginFinish_CreateLobbyUI.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\CoroutineLock\CoroutineLockQueueType.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Global\GlobalComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Entry.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\Router\RouterNodeSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Move\MoveComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Message\InnerMessage.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\ConstValue.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Message\MongoOpcode.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Recast\PathfindingComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Router\RouterComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Opera\OperaComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Unit\AnimatorComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Router\RouterCheckComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Config\StartMachineConfig.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\ActorLocation\ActorResponse.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Gate\GateMapComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Robot\Scene\RobotSceneFactory.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Session\SessionComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Unit\UnitFactory.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\ResponseTypeAttribute.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\Unit\UnitLeaveSightRange_NotifyClient.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Move\MoveComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\AI\AIComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\UI\UILogin\AppStartInitFinish_CreateLoginUI.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\UI\UILobby\UILobbyComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\RobotCase\RobotCaseDispatcherComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\RobotCase\RobotCaseDispatcherComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Demo\InitShare.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\AOI\AOIEventType.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Numeric\NumericWatcherAttribute.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Config\AIConfig.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\ActorLocation\LocationComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\UIEventComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\AOI\AOIEntity.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\DB\DBComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Robot\Case\RobotCase_FirstCase.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Watcher\WatcherHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Demo\Watcher\WatcherComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\MessageAttribute.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\AOI\AOIEntitySystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\Move\MoveHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\ActorLocation\LocationComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\AI\AI_XunLuo.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Realm\C2R_LoginHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Map\Transfer\TransferHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Gate\PlayerSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\MessageInner\NetInnerComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Scene\M2C_StartSceneChangeHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\ActorLocation\AMActorLocationHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Server\Module\RobotCase\IRobotCase.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\MessageInner\NetInnerComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\OpcodeTypeComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Config\IConfig.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\ETTask\ETCancelationTokenHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\AI\AIDispatcherComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Model\Share\Module\AI\AAIHandler.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Realm\RealmGateAddressHelper.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\ActorLocation\ActorLocationSenderComponentSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerVector2.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Textures\RTHandle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Camera\FreeCamera.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphPass.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\CoreProfileId.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\DebugUI.Panel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\CoreAttributes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphResourceTexture.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\ObservableList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Textures\Texture2DAtlasDynamic.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeVolumeBakingProcessSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\LookDev\IDataProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerMessageBox.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Textures\DepthBits.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeVolumePerSceneData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeReferenceVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerToggle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerGroup.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\PostProcessing\LensFlareComponentSRP.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\ShaderGenerator\ShaderGeneratorAttributes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\CoreMatrixUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\CommonStructs.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\Blitter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Inputs\InputRegistering.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeReferenceVolumeProfile.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerWidget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\ColorUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\DebugManager.Actions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\PostProcessing\LensFlareCommonSRP.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Volume\VolumeStack.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphResourceRendererList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\IVirtualTexturingEnabledRenderPipeline.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerEnumField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\ConstantBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerContainer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerVBox.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerToggleHistory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphResourcePool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\CommandBufferPool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphProfileId.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\DelegateUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Textures\BufferedRTHandleSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Textures\RTHandleSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Textures\TextureXR.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerPersistentCanvas.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ShaderVariablesProbeVolumes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\SceneRenderPipeline.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Documentation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerEnumHistory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeReferenceVolume.Debug.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\CoreRenderPipelinePreferences.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\ComponentSingleton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\TextureCurve.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\XRUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Camera\CameraSwitcher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\DebugShapes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphResourceRegistry.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphLogger.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\HableCurve.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\ProfilingScope.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\ObjectPools.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Volume\VolumeProfile.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\XRGraphics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\ResourceReloader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerVector3.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Textures\PowerOfTwoTextureAtlas.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerIndirectToggle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphObjectPool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\XR\XRGraphicsAutomatedTests.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\MousePositionDebug.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Volume\VolumeParameter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\BitArray.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeVolumeAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\HaltonSequence.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerUIntField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerFloatField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeBrickIndex.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerPanel.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeBrickPool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Textures\Texture2DAtlas.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Volume\VolumeComponent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\TileLayoutUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\UIFoldout.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\MaterialQuality.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\CoreUnsafeUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerValue.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\DebugUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\DynamicArray.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\SphericalHarmonics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerHBox.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerIntField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\SerializableEnum.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RendererList\RendererList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerVector4.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerIndirectFloatField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Volume\IVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphResourceComputeBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerBitField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphBuilder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\DebugUpdater.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerCanvas.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphDefaultResources.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerColor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeVolumeSceneData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderPipeline\RenderPipelineResources.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\DebugManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerRow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\DynamicResolutionHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\PostProcessing\LensFlareDataSRP.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\DebugUI.Containers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeVolume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\CameraCaptureBridge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\FSRUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Volume\VolumeManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Textures\RTHandles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lights\LightAnchor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraphResources.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\SerializedDictionary.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Textures\MSAASamples.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\MeshGizmo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\CoreUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\RenderGraph\RenderGraph.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerButton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Volume\Volume.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeIndexOfIndices.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\ListBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeVolumePositioning.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\Prefabs\Scripts\DebugUIHandlerFoldout.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\GlobalDynamicResolutionSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Common\IAdditionalData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\ArrayExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Debugging\DebugUI.Fields.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Scripts\Codes\Unity.Codes.asmdef" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\PostProcessing\Shaders\LensFlareCommon.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\PostProcessing\Shaders\ffx\ffx_a.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\Blit.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\DecodeSH.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeReferenceVolume.Debug.cs.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ProbeVolume.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\PostProcessing\Shaders\ffx\ffx_fsr1.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\PostProcessing\Shaders\ffx\ffx_cas.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\PostProcessing\Shaders\ffx\ffx_lpm.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Lighting\ProbeVolume\ShaderVariablesProbeVolumes.cs.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Utilities\BlitColorAndDepth.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\PostProcessing\Shaders\FSRCommon.hlsl" />
+    <None Include="Library\PackageCache\com.unity.render-pipelines.core@12.1.7\Runtime\Unity.RenderPipelines.Core.Runtime.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -373,9 +229,6 @@
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AutoStreamingModule">
-      <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AutoStreamingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
@@ -428,9 +281,6 @@
     <Reference Include="UnityEngine.LocalizationModule">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.NVIDIAModule">
-      <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.NVIDIAModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
@@ -466,9 +316,6 @@
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SubsystemsModule">
-      <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
@@ -536,9 +383,6 @@
     <Reference Include="UnityEngine.VFXModule">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.VRModule">
-      <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
@@ -550,9 +394,6 @@
     </Reference>
     <Reference Include="UnityEngine.WindModule">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XRModule">
-      <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
@@ -631,9 +472,6 @@
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>Assets\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -1016,26 +854,8 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.Mono.csproj">
-      <Project>{29FA1059-9757-9C19-985B-FC9FC473328E}</Project>
-      <Name>Unity.Mono</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ThirdParty.csproj">
-      <Project>{E15BADD2-3A26-309A-AB0F-DC5B08044350}</Project>
-      <Name>Unity.ThirdParty</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Core.csproj">
-      <Project>{EB9B0E77-13B3-6137-FAA2-76DAF4B34ADA}</Project>
-      <Name>Unity.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{C0C5E174-727C-9FFA-CD43-B55BDEF754DA}</Project>
       <Name>UnityEditor.UI</Name>
