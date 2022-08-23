@@ -106,6 +106,13 @@ namespace ET.Client
             ResourcesComponent.Instance.BundleNameToLowerDict[value] = result;
             return result;
         }
+
+        // todo_sj 全局保证prefabName唯一，然后建立prefabName对应的abName表，这样就可以只通过传入prefabName达到资源加载的目的
+        public static string PrefabNameToABName(this string val)
+        {
+            // todo_sj
+            return val;
+        }
     }
 
 

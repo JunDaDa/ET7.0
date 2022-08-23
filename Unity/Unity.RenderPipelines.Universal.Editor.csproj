@@ -231,9 +231,9 @@
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.7\Editor\ShaderGraph\Targets\UniversalTarget.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.7\Editor\Lighting\UniversalRenderPipelineLightUI.Drawers.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.7\Editor\RendererFeatures\DecalRendererFeatureEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.7\Editor\2D\ShapeEditor\Selection\PointRectSelector.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.7\Editor\AssetPostProcessors\ThreeDSMaterialDescriptionPostprocessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.7\Editor\2D\ShaderGraph\Targets\UniversalSpriteLitSubTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.7\Editor\2D\ShapeEditor\Selection\PointRectSelector.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.7\Editor\AssetPostProcessors\MaterialPostprocessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.7\Editor\UniversalRenderPipelineAsset\SerializedUniversalRenderPipelineAsset.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.7\Editor\Decal\DecalShaderGraphGUI.cs" />
@@ -1001,11 +1001,11 @@
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

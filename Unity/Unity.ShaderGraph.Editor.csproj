@@ -101,8 +101,8 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\Input\Texture\SampleTexture2DArrayNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Generation\Enumerations\KeywordDefinition.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\IPropertyFromNode.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Generation\Descriptors\SubShaderDescriptor.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\Utility\SubGraphNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Generation\Descriptors\SubShaderDescriptor.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\Blackboard\SGBlackboardRow.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\Input\Texture\SamplerStateNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\Inspector\PropertyDrawers\SampleTexture2DNodePropertyDrawer.cs" />
@@ -217,10 +217,10 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Util\GraphUtil.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Generation\Descriptors\StencilDescriptor.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\Input\Scene\CameraNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\SearchWindowProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\Utility\DropdownNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Legacy\UnlitMasterNode1.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Generation\Contexts\TargetPropertyGUIContext.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\SearchWindowProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\Inspector\PropertyDrawers\SampleVirtualTextureNodePropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Generation\Collections\IncludeCollection.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Generation\Attributes\GenerateBlocksAttribute.cs" />
@@ -474,8 +474,8 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\Input\Basic\BooleanNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\Inspector\PropertyDrawers\SampleTexture2DArrayNodePropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\UV\RadialShearNode.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\Controls\GradientControl.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Graphs\GraphDataUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\Controls\GradientControl.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Generation\Contexts\TargetFieldContext.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\Inspector\PropertyDrawers\Vector2PropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\Math\Vector\DistanceNode.cs" />
@@ -671,8 +671,8 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\Utility\Logic\AnyNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Legacy\SpriteLitMasterNode1.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\Inspector\PropertyDrawers\IntegerPropertyDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\UV\RotateNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\Math\Trigonometry\ArcsineNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\UV\RotateNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\Views\Slots\MultiFloatSlotControlView.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Drawing\Controls\EnumConversionControl.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.7\Editor\Data\Nodes\Utility\RedirectNodeData.cs" />
@@ -1490,11 +1490,11 @@
     <Reference Include="Unity.Searcher.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -90,9 +90,9 @@
     <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Router\HttpClientHelper.cs" />
     <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Unit\Unit.cs" />
     <Compile Include="Assets\Scripts\Codes\HotfixView\Client\Demo\Scene\SceneChangeStart_AddComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\AOI\AOIManagerComponentSystem.cs" />
     <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\Session.cs" />
     <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\NetKcpComponent.cs" />
+    <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\AOI\AOIManagerComponentSystem.cs" />
     <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\UI\UIHelp\UIHelpComponent.cs" />
     <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\AOI\AOISeeCheckHelper.cs" />
     <Compile Include="Assets\Scripts\Codes\Model\Generate\Server\Message\OuterMessage.cs" />
@@ -206,9 +206,10 @@
     <Compile Include="Assets\Scripts\Codes\Model\Server\Module\DB\IDBCollection.cs" />
     <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Recast\NavmeshComponentSystem.cs" />
     <Compile Include="Assets\Scripts\Codes\Model\Server\Module\RobotCase\RobotCase.cs" />
+    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\TestModule\TestModuleComponent.cs" />
     <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Module\ActorLocation\LocationProxyComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Scene\SceneChangeHelper.cs" />
     <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Scene\ClientSceneFlagComponent.cs" />
+    <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Scene\SceneChangeHelper.cs" />
     <Compile Include="Assets\Scripts\Codes\Hotfix\Share\Module\Message\NetKcpComponentSystem.cs" />
     <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Message\ISessionStreamDispatcher.cs" />
     <Compile Include="Assets\Scripts\Codes\Hotfix\Server\Demo\Gate\PlayerComponentSystem.cs" />
@@ -221,6 +222,7 @@
     <Compile Include="Assets\Scripts\Codes\Model\Share\Module\CoroutineLock\CoroutineLockComponent.cs" />
     <Compile Include="Assets\Scripts\Codes\Model\Server\Module\Console\ConsoleComponent.cs" />
     <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Timer\ATimer.cs" />
+    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\Resource\GameObjectPoolComponent.cs" />
     <Compile Include="Assets\Scripts\Codes\Model\Share\Module\Log\NLogger.cs" />
     <Compile Include="Assets\Scripts\Codes\Hotfix\Client\Demo\Unit\M2C_CreateUnitsHandler.cs" />
     <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\UIType.cs" />
@@ -1016,11 +1018,11 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>D:\Unity\2021.3.6f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
