@@ -75,7 +75,7 @@ namespace ET.Client
 
         private Dictionary<Entity, Dictionary<string, GameObject>> goUsedCache = new Dictionary<Entity, Dictionary<string, GameObject>>();
 
-        private GameObject GetFromPool(string prefabName)
+        private GameObject PopFromPool(string prefabName)
         {
             if (!goPoolDict.TryGetValue(prefabName, out var goPool))
             {
@@ -119,6 +119,18 @@ namespace ET.Client
             allGoDict.Add(go, prefabName);
         }
 
+        private void RemoveFromAllGoDict(GameObject go)
+        {
+            if (allGoDict.TryGetValue(go, out var result))
+            {
+                allGoDict.Remove(go);
+            }
+            else
+            {
+                Log.Error("RemoveFromAllGoDict Fail！找不到go");
+            }
+        }
+
         #region 公共方法
         public async ETTask<GameObject> SpwanGo(string prefabName, Transform parent = null)
         {
@@ -129,10 +141,14 @@ namespace ET.Client
 
             await resLoadComponent.LoadAsync(abName);
             GameObject bundleGo = (GameObject)ResourcesComponent.Instance.GetAsset(abName, prefabName);
-            var go = GetFromPool(prefabName);
+            var go = PopFromPool(prefabName);
             if (go == null)
             {
-                go = UnityEngine.Object.Instantiate(bundleGo, parent);
+                go = GameObject.Instantiate(bundleGo, parent);
+#if UNITY_EDITOR
+                go.name = prefabName;
+#endif
+                AddToAllGoDict(prefabName, go);
             }
             else
             {
@@ -149,7 +165,8 @@ namespace ET.Client
         {
             if (isClean)
             {
-                下次从卸载这里开始写起
+                RemoveFromAllGoDict(go);
+                GameObject.DestroyImmediate(go, true);
             }
             else
             {
